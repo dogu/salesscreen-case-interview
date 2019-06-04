@@ -34,11 +34,11 @@ GET api/account/{accountId}
 }
 ```
 
-The code for fetching the account information is already implemented, but its not currently working as expected. Your tasks is to find the errors in the current code, and correct them. The expected answer is 15000.
+The code for fetching the account information is already implemented, but its not currently working as expected. **Your tasks is to find the errors in the current code, and correct them.** The expected answer is 15000.
 
 
 ### Task 2
-Next we want to get an overview of the expenses on our account. The Transaction endpoint in the API can be used to list all the transactions for an account. Your task is to extend the current code to print the total amount of all expenses the last 30 days, as well as the average value for those transactions.
+Next we want to get an overview of the expenses on our account. The Transaction endpoint in the API can be used to list all the transactions for an account. **Your task is to extend the current code to print the total amount of all expenses the last 30 days, as well as the average value for those transactions.**
 
 The Transaction endpoint accepts an account ID as input, and returns all the transactions for that account within the current year. If the account ID is not valid, the endpoint will return a 400 Bad Request status code. A valid response looks like this:
 
@@ -62,7 +62,7 @@ GET api/transaction/{accountId}
 ```
 
 ### Task 3
-Now that we have a perception for how our monthly expenses looks like, we've created a monthly budget. The budget is separated into different categories, each with an assigned amount. To validate if the budget we have created is realistic, we want to compare it with the actual expenses for the last 3 full months. The task is to print a list of all the categories for each month, with the difference between the actual expenses and the budget. An example output could look like this:
+Now that we have a perception for how our monthly expenses looks like, we've created a monthly budget. The budget is separated into different categories, each with an assigned amount. To validate if the budget we have created is realistic, we want to compare it with the actual expenses for the last 3 full months. **Your task is to print a list of all the categories for each month, with the difference between the actual expenses and the budget.** An example output could look like this:
 
 ```
 March - Clothing: -200
@@ -75,7 +75,7 @@ May - Clothing: -600
 ...
 ```
 
-OBS!: These are only examples and not necessarily equal to the actual numbers.
+N.B.: These are only examples and not necessarily equal to the actual numbers.
 
 To list all the different categories you can use the Category endpoint. This endpoint lists all the different categories and accepts no input. The response looks like this:
 
