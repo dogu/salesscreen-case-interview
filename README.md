@@ -9,18 +9,18 @@ Case interview assignment for Software Engineer position @ SalesScreen
 
 
 ## Get Started
-Fork this GitHub repository to you personal account and clone the repository to your local machine. Open the folder in Visual Studio Code. A "Would you like to add the required assets to build and debug your project?" notification appears at the top of the window, select *Yes*.
+Fork this GitHub repository to you personal account and clone the repository to your local machine. Open the folder in Visual Studio Code. A "Would you like to add the required assets to build and debug your project?" notification should appear at the top of the window, select *Yes*.
 
 To debug the code, press F5. The application entrypoint is the Main method in Program.cs.
 
 We recommend you keep some notes on how you solve each task, you will be asked about your approach in the interview. To make it easier to review you code, we also recommend that you create separate commits for each task.
 
 ## Tasks
-The overall goal of this assignment is to create a simple banking application. The application will consist of a simple C#/.NET Core console application that fetches JSON data from a REST API. The application has no UI elements, and simply prints the results to the console.
+The overall goal of this assignment is to create a simple banking application. The application will consist of a C#/.NET Core console application that fetches JSON data from a REST API. The application has no UI elements, and prints the results directly to the console.
 
 
 ### Task 1
-First we want to determine the amount of available funds on our bank account. Available funds are defined as the sum of the current balance and the credit available on the account. As the first customer of this hypothetical bank, we've received an account with ID=1.
+First we want to determine the amount of available funds in our bank account. Available funds are defined as the sum of the current balance and the credit available on the account. As the first customer of this hypothetical bank, we've received an account with ID=1.
 
 Information about a single bank account can be fetched from the Account endpoint in the API. The endpoint accepts an account ID as input, and returns some basic information for the account specified. If the account ID is not valid, the endpoint will return a 404 Not Found status code. A valid response looks like this: 
 
